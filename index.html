@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Iris Scatter Plots</title>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <!-- select xy axis -->
+        <div class="info">
+            <div style="padding: 1%">
+                <label for="x-axis">X-Axis:</label>
+                <select id="x-axis">
+                    <option value="sepal length">sepal length</option>
+                    <option value="sepal width">sepal width</option>
+                    <option value="petal length">petal length</option>
+                    <option value="petal width">petal width</option>
+                </select>
+            </div>
+            <div style="padding: 1%">
+                <label for="y-axis">Y-Axis:</label>
+                <select id="y-axis">
+                    <option value="sepal length">sepal length</option>
+                    <option value="sepal width">sepal width</option>
+                    <option value="petal length">petal length</option>
+                    <option value="petal width">petal width</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- class and color -->
+        <div class="color-legend">
+            <div class="legend-item">
+                <div class="color-box" style="background-color: red;"></div>
+                <div>Iris-setosa</div>
+            </div>
+            <div class="legend-item">
+                <div class="color-box" style="background-color: green;"></div>
+                <div>Iris-versicolor</div>
+            </div>
+            <div class="legend-item">
+                <div class="color-box" style="background-color: blue;"></div>
+                <div>Iris-virginica</div>
+            </div>
+        </div>
+
+        <!-- scatter plots -->
+        <svg class="scatter-plot" id="plot"></svg>
+
+        <script src="scatterplot.js"></script>
+    </body>
+</html>
